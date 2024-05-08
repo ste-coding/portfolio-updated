@@ -72,9 +72,8 @@ function Projects() {
               isBlog={false}
               title="Crossy Road"
               description="This project came about during my JavaScript learning along with the Alura course. By using the p5.js library, I seek to combine traditional gameplay with elements of creative programming. The result is a game that reflects the practical and exploratory approach to language, with a playful understanding of object orientation."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
+              demoLink="https://editor.p5js.org/stealcsantos/full/jCddZ32tF"
+              />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
