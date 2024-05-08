@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import thriftopia from "../../Assets/Projects/thriftopia.jpeg";
+import crossyroad from "../../Assets/Projects/crossyroad.png";
+import cyberquest from "../../Assets/Projects/cyberquest.png";
+import menthelp from "../../Assets/Projects/menthelp.png";
+import womentech from "../../Assets/Projects/mulheresTech.png";
+import ewaste from "../../Assets/Projects/ewaste.png";
 
 function Projects() {
   return (
@@ -21,70 +21,69 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={ewaste}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="e-waste: a database modelling project"
+              description="Modeling of a database for a system that connects users to the nearest electronic waste collection points, offering discount coupons from partnerships."
+              ghLink="https://lnkd.in/d5SbUght"
+              // demoLink="https://www.linkedin.com/posts/stephanie-candido_miniprojeto-sistema-de-localiza%C3%A7%C3%A3o-de-pontos-activity-7193319696975220736-iC7e?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={cyberquest}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="CyberQuest"
+              description="CyberQuest is an educational game developed as part of the Interdisciplinary Project for Information Systems 1, which proposes the creating of a project using Python and Kivy. The game aims to educate players about fundamental cybersecurity concepts, providing an interactive and challenging experience."
+              ghLink="https://github.com/ste-coding/cyberquest-game"
+              // demoLink="https://github.com/ste-coding/cyberquest-game"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={thriftopia}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Thriftopia"
+              description="Thriftopia is a platform for donating clothes and accessories, allowing you to register items for donation. Connecting conscious consumers to donors. This project was developed as part of module 2 of the Programmers of Tomorrow training."
+              ghLink="https://github.com/ste-coding/M2-PdA-projeto-cadastro"
+              // demoLink="https://github.com/ste-coding/M2-PdA-projeto-cadastro"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={womentech}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Women in Tech"
+              description="Implementation of an API integrated into a website aimed at registering women working in the technology sector in Brazil. To ensure efficient data management, MongoDB was used as the main database and Insomnia was used to test the functionalities (CRUD) in a production environment."
+              ghLink="https://github.com/ste-coding/backend-programaria"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={crossyroad}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Crossy Road"
+              description="This project came about during my JavaScript learning along with the Alura course. By using the p5.js library, I seek to combine traditional gameplay with elements of creative programming. The result is a game that reflects the practical and exploratory approach to language, with a playful understanding of object orientation."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={menthelp}
+              isBlog={false}
+              title="MentHelp"
+              description="This is a web project focused on mental well-being, offering resources, inspiration and support to take care of mental health. Project carried out as a squad in module 2 of Prgramadores do Amanhã"
+              ghLink="https://github.com/VictorCDS-p/ProjetoFinal-M2"
+              demoLink="https://victorcds-p.github.io/ProjetoFinal-M2/"
             />
           </Col>
         </Row>
