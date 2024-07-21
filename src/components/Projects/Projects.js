@@ -8,6 +8,7 @@ import cyberquest from "../../Assets/Projects/cyberquest.png";
 import menthelp from "../../Assets/Projects/menthelp.png";
 import womentech from "../../Assets/Projects/mulheresTech.png";
 import ewaste from "../../Assets/Projects/ewaste.png";
+import ewasteAPI from "../../Assets/Projects/ewasteAPI.png";
 
 function Projects() {
   return (
@@ -22,6 +23,17 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ewasteAPI}
+              isBlog={false}
+              title="e-waste: find the nearest recycling point"
+              description="Cretion of a RESTful API to connect recycling and collecting points of ewaste based on location.."
+              ghLink="https://github.com/ste-coding/miniprojeto-api-M4"
+              demoLink="https://ewaste-api-m4.netlify.app/"
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ewaste}
